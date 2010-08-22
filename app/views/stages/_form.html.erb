@@ -1,0 +1,31 @@
+<%= form_for(@stage) do |f| %>
+<fieldset class="form-list">
+	<legend>Stage</legend>
+
+  <% if @stage.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@stage.errors.count, "error") %> prohibited this stage from being saved:</h2>
+    <ul>
+    <% @stage.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+  <table>
+    <tr class="field">
+      <th><%= f.label :name %></th>
+      <td><%= f.text_field :name %></td>
+    </tr>
+    <tr class="field">
+      <th><%= f.label :commitment_id %></th>
+      <td><%= f.text_field :commitment_id %></td>
+    </tr>
+    </table>
+    
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+</fieldset>
+      
+<% end %>

@@ -1,0 +1,39 @@
+<p class="notice"><%= notice %></p>
+<fieldset class="show-list">
+	<legend>Candidate</legend>
+  	<table>
+	    <tr>
+      <th>Name:</th>
+      <td><%= @candidate.name %><td>
+    </tr>
+
+	    <tr>
+      <th>Stage:</th>
+      <td><%= @candidate.stage_id %><td>
+    </tr>
+
+	    <tr>
+      <th>Person:</th>
+      <td><%= @candidate.person_id %><td>
+    </tr>
+
+	    <tr>
+      <th>Score:</th>
+      <td><%= @candidate.score %><td>
+    </tr>
+
+	    <tr>
+      <th>Status:</th>
+      <td><%= @candidate.status %><td>
+    </tr>
+
+		</table>
+</fieldset>
+<div class="actions">
+	<%= link_to 'Edit', edit_candidate_path(@candidate) %> |
+	<%= link_to 'Back', candidates_path %>
+</div>
+<div class="relations">
+	<div id="related">
+	</div>
+</div>

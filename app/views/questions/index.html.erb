@@ -1,0 +1,45 @@
+<h1>Listing questions</h1>
+<div class="assmnt-list">
+	<div class="assmnt-actions">
+	  <%if params[:assessment_id] %>
+    <%= link_to 'New Question', new_assessment_question_path(params[:assessment_id]) %>
+    <%else%>
+    <%= link_to 'New Question', new_assessment_question_path(params[:id]) %>
+    <%end%>
+	</div>
+
+  <table>
+    <tr class="list-header">
+        <th>Sequence</th>
+        <th>Question</th>
+        <th>Shortname</th>
+        <th>Answer type</th>
+        <th>Display type</th>
+        <th>Score method</th>
+        <th>Weight</th>
+        <th>Critical</th>
+        <th>Actions</th>
+    </tr>
+<% alt = true%>
+  <% @questions.each do |question| %>
+  <% alt = !alt %>
+  
+    <tr <%=raw alt ? "class=\"alt\"" : ""%>>
+        <td><%= question.sequence %></td>
+        <td><%=raw truncateText(question.question,25) %></td>
+        <td><%= question.shortname %></td>
+        <td><%= question.answer_type %></td>
+        <td><%= question.display_type %></td>
+        <td><%= question.score_method %></td>
+        <td><%= question.weight %></td>
+        <td><%= question.critical %></td>
+        <td>
+        <%= link_to 'Show', question %>
+        <%= link_to 'Edit', edit_question_path(question) %>
+        <%= link_to 'Destroy', question, :confirm => 'Are you sure?', :method => :delete %>
+      </td>
+    </tr>
+  <% end %>
+  </table>
+</div>
+

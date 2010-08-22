@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  stage_id: 1
+  person_id: 1
+  score: 9.99
+  status: MyString
+
+two:
+  name: MyString
+  stage_id: 1
+  person_id: 1
+  score: 9.99
+  status: MyString

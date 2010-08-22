@@ -1,0 +1,38 @@
+<h1>Listing assessments</h1>
+<div class="assmnt-list">
+	<div class="assmnt-actions">
+    <%= link_to 'New Assessment', new_assessment_path %>
+	</div>
+
+  <table>
+    <tr class="list-header">
+        <th>Name</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Category</th>
+        <th>Max raw</th>
+        <th>Max weighted</th>
+        <th>Actions</th>
+    </tr>
+    <% alt = true%>
+    <% @assessments.each do |assessment| %>
+      <% alt = !alt %>
+
+      <tr <%=raw alt ? "class=\"alt\"" : ""%>>
+
+        <td><%= assessment.name %></td>
+        <td><%=raw truncateText(assessment.description,25,"middle") %></td>
+        <td><%= assessment.status %></td>
+        <td><%= assessment.category %></td>
+        <td><%= assessment.max_raw %></td>
+        <td><%= assessment.max_weighted %></td>
+        <td>
+        <%= link_to 'Show', assessment %>
+        <%= link_to 'Edit', edit_assessment_path(assessment) %>
+        <%= link_to 'Destroy', assessment, :confirm => 'Are you sure?', :method => :delete %>
+      </td>
+    </tr>
+  <% end %>
+  </table>
+</div>
+

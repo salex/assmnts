@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  assesses_type: MyString
+  assessment: 
+  status: MyString
+
+two:
+  assesses_type: MyString
+  assessment: 
+  status: MyString

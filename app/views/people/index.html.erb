@@ -1,0 +1,29 @@
+<h1>Listing people</h1>
+<div class="index-list">
+	<div class="actions">
+    <%= link_to 'New Person', new_person_path %>
+	</div>
+
+  <table>
+    <tr class="list-header">
+        <th>Name</th>
+        <th>Location</th>
+        <th>Status</th>
+        <th>Actions</th>
+    </tr>
+
+  <% @people.each do |person| %>
+    <tr>
+        <td><%= person.name %></td>
+        <td><%= person.location %></td>
+        <td><%= person.status %></td>
+        <td>
+        <%= link_to 'Show', person %>
+        <%= link_to 'Edit', edit_person_path(person) %>
+        <%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %>
+      </td>
+    </tr>
+  <% end %>
+  </table>
+</div>
+

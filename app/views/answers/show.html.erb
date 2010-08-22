@@ -1,0 +1,50 @@
+<p class="notice"><%= notice %></p>
+<fieldset class="assmnt-show">
+	<legend>Answer</legend>
+  	<table>
+  		<tr>
+  	  <th>Sequence:</th>
+  	  <td><%= @answer.sequence %><td>
+  	</tr>
+
+  		<tr>
+  	  <th>Answer:</th>
+  	  <td><%= @answer.answer %><td>
+  	</tr>
+
+  		<tr>
+  	  <th>Shortname:</th>
+  	  <td><%= @answer.shortname %><td>
+  	</tr>
+
+  		<tr>
+  	  <th>Value:</th>
+  	  <td><%= @answer.value %><td>
+  	</tr>
+
+  		<tr>
+  	  <th>Requires other:</th>
+  	  <td><%= @answer.requires_other %><td>
+  	</tr>
+
+  		<tr>
+  	  <th>Other question:</th>
+  	  <td><%= @answer.other_question %><td>
+  	</tr>
+
+  		<tr>
+  	  <th>Answer eval:</th>
+  	  <td><%= @answer.answer_eval %><td>
+  	</tr>
+
+
+	</table>
+</fieldset>
+<div class="assmnt-actions">
+	<%= link_to 'Edit', edit_answer_path(@answer) %> |
+	<%= link_to 'Back', question_path(@answer.question_id) %>
+</div>
+<div class="relations">
+	<div id="related">
+	</div>
+</div>

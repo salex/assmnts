@@ -1,0 +1,44 @@
+<h1>Listing answers</h1>
+<div class="assmnt-list">
+	<div class="assmnt-actions">
+    <%if params[:question_id] %>
+    <%= link_to 'New Answer', new_question_answer_path(params[:question_id]) %>
+    <%else%>
+    <%= link_to 'New Answer', new_question_answer_path(params[:id]) %>
+    <%end%>
+	  
+	</div>
+
+  <table>
+    <tr class="list-header">
+        <th>Sequence</th>
+        <th>Answer</th>
+        <th>Shortname</th>
+        <th>Value</th>
+        <th>Requires other</th>
+        <th>Other question</th>
+        <th>Answer eval</th>
+        <th>Actions</th>
+    </tr>
+    <% alt = true%>
+    <% @answers.each do |answer| %>
+      <% alt = !alt %>
+
+    <tr <%=raw alt ? "class=\"alt\"" : ""%>>
+        <td><%= answer.sequence %></td>
+        <td><%= answer.answer %></td>
+        <td><%= answer.shortname %></td>
+        <td><%= answer.value %></td>
+        <td><%= answer.requires_other %></td>
+        <td><%= answer.other_question %></td>
+        <td><%= answer.answer_eval %></td>
+        <td>
+        <%= link_to 'Show', answer %>
+        <%= link_to 'Edit', edit_answer_path(answer) %>
+        <%= link_to 'Destroy', answer, :confirm => 'Are you sure?', :method => :delete %>
+      </td>
+    </tr>
+  <% end %>
+  </table>
+</div>
+

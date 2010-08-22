@@ -1,0 +1,62 @@
+<p class="notice"><%= notice %></p>
+<fieldset class="assmnt-show">
+	<legend>Assessment</legend>
+  	<table>
+  	<tr>
+  	  <th>Name:</th>
+  	  <td><%= @assessment.name %><td>
+  	</tr>
+
+  	<tr>
+  	  <th>Description:</th>
+  	  <td><%= @assessment.description %><td>
+  	</tr>
+  	<tr>
+  	  <th>Instructions:</th>
+  	  <td><%= @assessment.instructions %><td>
+  	</tr>
+
+  	<tr>
+  	  <th>Status:</th>
+  	  <td><%= @assessment.status %><td>
+  	</tr>
+
+  	<tr>
+  	  <th>Category:</th>
+  	  <td><%= @assessment.category %><td>
+  	</tr>
+
+  	<tr>
+  	  <th>Answer type:</th>
+  	  <td><%= @assessment.answer_type %><td>
+  	</tr>
+
+  	<tr>
+  	  <th>Display type:</th>
+  	  <td><%= @assessment.display_type %><td>
+  	</tr>
+
+  	<tr>
+  	  <th>Max raw:</th>
+  	  <td><%= @assessment.max_raw %><td>
+  	</tr>
+
+  	<tr>
+  	  <th>Max weighted:</th>
+  	  <td><%= @assessment.max_weighted %><td>
+  	</tr>
+
+	</table>
+</fieldset>
+<div class="assmnt-actions">
+	<%= link_to 'Edit', edit_assessment_path(@assessment) %> |
+	<%= link_to 'Assessments', assessments_path %>
+	<%= link_to 'Test Assessment', display_assessment_path(@assessment) %>
+	
+</div>
+<div class="relations">
+	<div id="related">
+	  <%= render :file => 'questions/index' %>
+	  
+	</div>
+</div>

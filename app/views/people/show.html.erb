@@ -1,0 +1,33 @@
+<p class="notice"><%= notice %></p>
+<fieldset class="show-list">
+	<legend>Person</legend>
+  	<table>
+	    <tr>
+      <th>Name:</th>
+      <td><%= @person.name %><td>
+    </tr>
+
+	    <tr>
+      <th>Location:</th>
+      <td><%= @person.location %><td>
+    </tr>
+
+	    <tr>
+      <th>Status:</th>
+      <td><%= @person.status %><td>
+    </tr>
+
+		</table>
+</fieldset>
+<div class="actions">
+	<%= link_to 'Edit', edit_person_path(@person) %> |
+	<%= link_to 'Back', people_path %>
+</div>
+<div class="relations">
+	<div id="related">
+	  <%= @assessors.inspect%>
+	  <br />
+	  <%= @scores.inspect%>
+	  
+	</div>
+</div>

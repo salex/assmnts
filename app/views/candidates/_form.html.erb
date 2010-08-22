@@ -1,0 +1,43 @@
+<%= form_for(@candidate) do |f| %>
+<fieldset class="form-list">
+	<legend>Candidate</legend>
+
+  <% if @candidate.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@candidate.errors.count, "error") %> prohibited this candidate from being saved:</h2>
+    <ul>
+    <% @candidate.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+  <table>
+    <tr class="field">
+      <th><%= f.label :name %></th>
+      <td><%= f.text_field :name %></td>
+    </tr>
+    <tr class="field">
+      <th><%= f.label :stage_id %></th>
+      <td><%= f.text_field :stage_id %></td>
+    </tr>
+    <tr class="field">
+      <th><%= f.label :person_id %></th>
+      <td><%= f.text_field :person_id %></td>
+    </tr>
+    <tr class="field">
+      <th><%= f.label :score %></th>
+      <td><%= f.text_field :score %></td>
+    </tr>
+    <tr class="field">
+      <th><%= f.label :status %></th>
+      <td><%= f.text_field :status %></td>
+    </tr>
+    </table>
+    
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+</fieldset>
+      
+<% end %>

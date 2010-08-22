@@ -1,0 +1,118 @@
+1	1	1	1	Contact	Contact Information	textform	list		f		none				
+3	3	2	2	Related Employee	Are you related to anyone now employed by this company?	radio	Inline	1.00	f		value				
+4	4	2	3	Train Night	Are you able to attend training at night?	radio	Inline		f		value				
+5	5	2	4	Train Day	Are you able to attend training during the day?	radio	Inline		f		value				
+6	6	2	5	Train Saturday	Are you able to attend training on Saturday?	radio	Inline		f		value				
+7	7	2	6	US Citizen	Are you a citizen of the United States?	radio	Inline		f		value				
+8	8	2	7	1st Shift	If required, are you willing to work 1st Shift?	radio	Inline		f		value				
+9	9	2	8	2nd Shift	If required, are you willing to work 2nd Shift?	radio	Inline		f		value				
+10	10	2	9	3rd Shift	If required, are you willing to work 3rd Shift?	radio	Inline		f		value				
+11	11	2	10	Swing/Rotating Shif	If required,         are you willing to work Swing/Rotating Shifts?	radio	Inline	1.00	t	1	value				
+12	12	2	11	Work overtime	If required,         are you willing to work overtime?	radio	Inline		f		value				
+13	13	2	12	Work weekends	If required, are you willing to work weekends?	radio	Inline		f		value				
+14	14	2	13	Work holidays	If required, are you willing to work holidays?	radio	Inline		f		value				
+15	15	3	1	Education	Please check <strong>all</strong> education or training levels that apply. Supply additional information if required.	checkbox	list	1.00	t	3	max				
+16	16	4	1	Current	Current	textform	list	1.00	f		none				
+17	17	4	2	Last	Last	textform	list	1.00	f		none				
+18	18	4	3	Previous	Previous	textform	list	1.00	f		none				
+19	19	4	4	Other	Describe any other work experience.	textarea	list	1.00	f		none				
+20	20	5	1	Aircraft Maintenanc	Aircraft Maintenance	radio	Inline		f		value				
+21	21	5	2	Assembly Operations	Assembly Operations	radio	Inline		f		value				
+22	22	5	3	Basic Sheet Metal	Basic Sheet Metal	radio	Inline		f		value				
+23	23	5	4	Blueprint Reading	Blueprint Reading	radio	Inline		f		value				
+24	24	5	5	Chemical Plant Oper	Chemical Plant Operations	radio	Inline		f		value				
+25	25	5	6	CNC Machining	CNC Machining	radio	Inline		f		value				
+26	26	5	7	Conventional Machin	Conventional Machining	radio	Inline		f		value				
+27	27	5	8	Customer Service	Customer Service	radio	Inline		f		value				
+28	28	5	9	Distribution/Wareho	Distribution/Warehousing Operations	radio	Inline		f		value				
+29	29	5	10	Electrical Maintena	Electrical Maintenance	radio	Inline		f		value				
+30	30	5	11	Forklift Operation	Forklift Operation	radio	Inline		f		value				
+31	31	5	12	Manufacturing Machi	Manufacturing Machine Operations	radio	Inline		f		value				
+32	32	5	13	Mechanical Maintena	Mechanical Maintenance	radio	Inline		f		value				
+33	33	5	14	Programmable Logic 	Programmable Logic Controllers	radio	Inline		f		value				
+34	34	5	15	Pneumatic/Hydraulic	Pneumatic/Hydraulic Maintenance	radio	Inline		f		value				
+37	37	6	3	best way	What is the best way?	radio	list	3.00	f	-1					
+38	38	6	4	Text Eval	What do you do when you are not working? Hobbies, etc.	text	list	1.00	t	1		You know I really miss playing golf.			
+39	39	6	5	textarea	Please describe the history of the world	textarea	list	1.00	f	-1					
+50	50	10	1		Plans instruction consistent with training objectives	radio	inline	1.00	f		value				
+51	51	10	2		Maintains accurate trainee records	radio	inline	1.00	f		value				
+52	52	10	3		Prepares necessary training materials prior to instruction	radio	inline	1.00	f		value				
+53	53	10	4		Clearly communicates directions, assignments, and expectations to trainees	radio	inline	1.00	f		value				
+54	54	10	5		Recognizes and reinforces appropriate trainee behavior	radio	inline	1.00	f		value				
+55	55	10	6		Promptly communicates problems to AIDT/Company	radio	inline	1.00	f		value				
+56	56	10	7		Enforces AIDT policies	radio	inline	1.00	f		value				
+57	57	10	8		Uses current/accurate resource materials	radio	inline	1.00	f		value				
+58	58	10	9		Uses a variety of instructional strategies, including technology and other media	radio	inline	1.00	f		value				
+59	59	10	10		Maintains student involvement during instruction	radio	inline	1.00	f		value				
+60	60	10	11		Evaluates trainee performance effectively	radio	inline	1.00	f		value				
+61	61	10	12		Provides trainees with feedback on performance	radio	inline	1.00	f		value				
+62	62	10	13		Maintains professional competence in topics	radio	inline	1.00	f		value				
+63	63	10	14		Maintains instructor-student relationship during instruction	radio	inline	1.00	f		value				
+64	64	10	15		Displays professional and ethical conduct during instruction	radio	inline	1.00	f		value				
+65	65	10	16		Maintains professional relationship with AIDT/Company	radio	inline	1.00	f		value				
+43	43	6	9	Completion score	What are the nouns and at least one adjective in the following sentence?	Text_Completion	List	1.00	t	1				2010-04-08 10:06:02.744856	
+2	2	2	1	Previously Employed	Have you been employed previously by this company?	Radio	Inline	1.00	f		Value			2010-08-04 20:24:26.123624	Please check Yes or No to the following questions
+36	36	6	2	aids checkbox sum	Who made your car(s)	Checkbox	Inline	5.00	f	-1	Sum			2010-08-05 13:38:43.836148	Please select all answers that apply
+41	41	6	7	text form	Please enter your contact infomation	TextForm	List	1.00	f		Value			2010-08-03 11:37:25.1917	
+40	40	6	6	multi select	What is your favorite team?	select-multiple	list	1.00	f		sum			2010-08-03 11:38:14.607368	
+45	45	6	11	worth	Is it worth it?	Radio	Inline	1.00	f	0	Value			2010-08-17 09:20:07.047738	
+35	35	6	1	World State	What do you think about the state of the world?	Select	List	1.00	t	1	Sum			2010-08-18 12:19:56.18576	
+66	66	10	17		Submits legible paperwork in timely manner	radio	inline	1.00	f		value				
+67	67	10	18		Reliable (attendance/promptness)	radio	inline	1.00	f		value				
+68	68	10	19		Comments:	textarea	list		f		none				
+69	69	10	20		Corrective Measures:	textarea	list		f		none				
+100		100	1	Previously Employed	Have you been employed previously by this company?	radio	inline	1.00	f		value				
+101		100	2	Related Employee	Are you related to anyone now employed by this company?	radio	inline	1.00	f		value				
+102		100	3	Train Night	Are you able to attend training at night?	radio	inline	1.00	f	1	value				
+103		100	4	Train Day	Are you able to attend training during the day?	radio	inline	1.00	f		value				
+104		100	5	Train Saturday	Are you able to attend training on Saturday?	radio	inline	1.00	f		value				
+105		100	6	US Citizen	Are you a citizen of the United States?	radio	inline	1.00	f		value				
+106		100	7	1st Shift	If required, are you willing to work 1st Shift?	radio	inline	1.00	f		value				
+107		100	8	2nd Shift	If required, are you willing to work 2nd Shift?	radio	inline	1.00	f		value				
+108		100	9	3rd Shift	If required, are you willing to work 3rd Shift?	radio	inline	1.00	f		value				
+109		100	10	Swing/Rotating Shif	If required, are you willing to work Swing/Rotating Shifts?	radio	inline	1.00	f		value				
+110		100	11	Work overtime	If required, are you willing to work overtime?	radio	inline	1.00	f		value				
+111		100	12	Work weekends	If required, are you willing to work weekends?	radio	inline	300.00	f		value				
+112		100	13	Work holidays	If required, are you willing to work holidays?	radio	inline	300.00	f		value				
+113		101	1	Education	Please check <strong>all</strong> education or training levels that apply. Supply additional information if required.	checkbox	list	1.00	f		max				
+114		102	1	Current	Current	textform	list	1.00	f		value				
+115		102	2	Last	Last	textform	list	1.00	f		value				
+116		102	3	Previous	Previous	textform	list	1.00	f		value				
+117		102	4	Other	Describe any other work experience.	textarea	list	1.00	f		value				
+118		103	1		Aircraft Maintenance	radio	inline		f		value				
+119		103	2		Assembly Operations	radio	inline		f		value				
+120		103	3		Basic Sheet Metal	radio	inline		f		value				
+121		103	4		Blueprint Reading	radio	inline		f		value				
+122		103	5		Chemical Plant Operations	radio	inline		f		value				
+123		103	6		CNC Machining	radio	inline		f		value				
+124		103	7		Conventional Machining	radio	inline		f		value				
+125		103	8		Customer Service	radio	inline	300.00	f		value				
+126		103	9		Distribution/Warehousing Operations	radio	inline		f		value				
+127		103	10		Electrical Maintenance	radio	inline		f		value				
+128		103	11		Forklift Operation	radio	inline		f		value				
+129		103	12		Manufacturing Machine Operations	radio	inline		f		value				
+130		103	13		Mechanical Maintenance	radio	inline		f		value				
+131		103	14		Programmable Logic Controllers	radio	inline		f		value				
+132		103	15		Pneumatic/Hydraulic Maintenance	radio	inline		f		value				
+133		103	16		Precision Measurement	radio	inline		f		value				
+134		103	17		Pulp/Paper/Wood Operations	radio	inline		f		value				
+135		103	18		Soldering	radio	inline		f		value				
+136		103	19		Statistical Process Control	radio	inline		f		value				
+137		103	20		Welding	radio	inline		f		value				
+138		104	2		How many years of full time work experience do you have?	radio	list	250.00	f		value				
+139		104	3		For your work in the last 5 years, which phrase best describes your experience?	radio	list	300.00	f		value				
+140		104	4		How many years of call center/telephone support experience have you had within the last 10 years?	radio	list	250.00	f		value				
+141		104	5		Are you at least 18 years of age?	radio	list	1.00	t		value				
+142		104	6		Are you currently eligible to work in the U.S.?	radio	list	1.00	t		value				
+143		104	7		In the last 10 years, what is the longest period of continuous UNEMPLOYMENT that you have experienced?	radio	list	200.00	f		value				
+144		104	8		In the last 10 years, what is the longest period of time that you have been with the same employer?	radio	list	300.00	f		value				
+145		104	9		Do you have at least a high school diploma or a GED?	radio	list	1.00	t	1	value				
+146		104	10		During your career, how many times have you been fired?	radio	list	1.00	t	1	value				
+147		104	11		In which range does your most recent hourly wage fall?	radio	list	500.00	f	1	value				
+151		105	4	3.1.3 Proj file Aud	Commitment Review - Prospect/Project file audit	Radio	Inline		f		None				
+44	44	6	10	Numeric score	What is the value of Pi (&#960;) to 4 decimal places	Text_Numeric	List	1.00	t	1	value			2010-04-07 13:06:11.685986	
+42	42	6	8	survey	Please rate the ease of filling out this applications from 1 being very difficult to 5 being very easy	Radio	Inline	0.00	f		None			2010-08-04 17:03:10.46343	
+148		105	1	3.1.1 Project Mgr	Commitment Review - Project Manager Assigned	Radio	Inline	1.00	f	0	Value			2010-04-11 15:52:55.136432	
+149		105	2	3.1.2 Objectives	Commitment Review - Project Objectives	Radio	Inline	1.00	f	0	value			2010-04-11 16:00:32.977973	
+150		105	3	3.1.3 Planning Sche	Commitment Review - Planning Schedule Set	Radio	Inline	1.00	f	0	value			2010-04-11 17:12:59.080841	
+156		6	12	parts of speech	 "The quick brown fox jumps the laze dogs back."	Text_completion	List	2.00	t	2	Sum	Where is this going to go	2010-08-08 12:57:15.919405	2010-08-08 14:49:08.914931	Please provide the part of speech of  the following sentence.

@@ -1,0 +1,14 @@
+1	1			application.contact	Uses form to gather contact information	Master	application.contact	textform	list					
+3	3			application.education		Master	application.education			5.00	5.00			
+4	4			application.experience		Master	application.experience							
+5	5			application.skills	For each skill area,select the number of years of experience you have in that area. Select the closest number.	Master	application.skills	radio	inline					
+100		1852	jobstage	General	Project: RYLA 2009, Job: Customer Service Representati	converted	application.General			15.00	1211.00			
+101		1852	jobstage	Education	Project: RYLA 2009, Job: Customer Service Representati	converted	application.Education			1.00	1.00			
+102		1852	jobstage	Experience	Project: RYLA 2009, Job: Customer Service Representati	converted	application.Experience							
+103		1852	jobstage	Skills	Project: RYLA 2009, Job: Customer Service Representati	converted	application.Skills			5.00	1500.00			
+104		1852	jobstage	Custom	Project: RYLA 2009, Job: Customer Service Representati	converted	application.Custom			33.00	8704.00			
+6	6	1792	jobstage	application.test	Please answer all these silly questions to the best of your ability.	Master	application.silly		List	64.00	105.00		2010-08-18 07:14:03.097875	
+105				Checklist		new	project.checklist.commitment	Radio	Inline	10.00	10.00		2010-04-11 17:12:59.102745	
+107	6			test empty	test empty	new	assessment.test	radio	inline	10.00		2010-04-11 12:51:21.725991	2010-04-15 14:27:29.471283	
+2	2			application.general		Master	application.general	radio	Inline	3.00	3.00		2010-08-01 15:30:59.929631	
+10	10			Instructor Evaluation	Instructor Evaluation	Master	Instructor.Evaluation		Inline	72.00	72.00		2010-08-01 16:19:02.886847	

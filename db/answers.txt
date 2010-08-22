@@ -1,0 +1,499 @@
+1	1	1	1	fname	First Name		f				
+2	2	1	2	mi	MI		f				
+3	3	1	3	lname	Last Name		f				
+4	4	1	4	address	Address		f				
+5	5	1	5	city	City		f				
+6	6	1	6	st	State		f				
+7	7	1	7	zip	Zip		f				
+8	8	1	8	county	County		f				
+9	9	1	9	phone1	Prim Phone		f				
+10	10	1	10	phone2	Sec Phone		f				
+11	11	1	11	email	eMail		f				
+12	12	1	12	mob	Month of Birth		f				
+13	13	1	13	dob	Day of Birth		f				
+14	14	2	1		Yes		t	What was your job?			
+15	15	2	2		No	1.00	f				
+16	16	3	1		Yes		t	Enter name and relation?			
+17	17	3	2		No	1.00	f				
+18	18	4	1		Yes	1.00	f				
+19	19	4	2		No		f				
+20	20	5	1		Yes	1.00	f				
+21	21	5	2		No		f				
+22	22	6	1		Yes	1.00	f				
+23	23	6	2		No		f				
+24	24	7	1		Yes	1.00	f				
+25	25	7	2		No		t	Enter work permit #			
+26	26	8	1		Yes	1.00	f				
+27	27	8	2		No		f				
+28	28	9	1		Yes	1.00	f				
+29	29	9	2		No		f				
+30	30	10	1		Yes	1.00	f				
+31	31	10	2		No		f				
+32	32	11	1		Yes	1.00	f				
+33	33	11	2		No		f				
+34	34	12	1		Yes	1.00	f				
+35	35	12	2		No		f				
+36	36	13	1		Yes	1.00	f				
+37	37	13	2		No		f				
+38	38	14	1		Yes	1.00	f				
+39	39	14	2		No		f				
+40	40	15	1	No Diploma/GED	I did not complete high school and do not have a diploma or GED.		f				
+41	41	15	2	Trade School	I did not complete high school but completed a non-diploma trade school.	1.00	f				
+42	42	15	3	Certificate	I completed high school but did not graduate (obtained certificate).	2.00	f				
+43	43	15	4	GED	I completed high school through a GED program.	3.00	f				
+44	44	15	5	HS Diploma	I completed high school and received a diploma.	4.00	t	Enter name of high school,             city and state			
+45	45	15	6	HS Diploma/CT	I completed high school and received a diploma with a Career Tech Endorsement.	5.00	t	Enter name of high school,             city and state			
+46	46	15	7	Military Tech	I completed a military technical school.	3.00	t	Enter Technical Area			
+47	47	15	8	Some Assoc	I attended an associate’s degree granting technical school/community college b	3.00	f				
+48	48	15	9	Assoc Degree	I received an associate’s degree from a technical school/community college.	5.00	t	Enter degree,             institute,             and year completed			
+49	49	15	10	Some College	I attended an accredited,             degree-granting college/university but did not receive	3.00	f				
+50	50	15	11	BS/BA Degree	I received a BS/BA degree from an accredited,             degree-granting college/university	4.00	t	Enter degree,             institute,             and year completed			
+51	51	15	12	Some Advanced	I attended an advanced degree program (MS/MA/PhD) but did receive a degree.	3.00	f				
+52	52	15	13	MS/MA+ Degree	I received an MS/MA/PhD degree from an accredited,             degree-granting college/unive	3.00	t	Enter degree,             institute,             and year completed			
+53	53	16	1	Company	Company		f				
+54	54	16	2	City	City State		f				
+55	55	16	3	Title	Job title/description		f				
+56	56	16	4	From Date	From (YY/MM)		f				
+57	57	16	5	To Date	To (YY/MM)		f				
+58	58	16	6	Start Wage	Start Wage/Salary		f				
+59	59	16	7	End Wage	End Wage/Salary		f				
+60	60	16	8	Leaving	Reason for leaving		f				
+61	61	17	1	Company	Company		f				
+62	62	17	2	City	City State		f				
+63	63	17	3	Title	Job title/description		f				
+64	64	17	4	From Date	From (YY/MM)		f				
+65	65	17	5	To Date	To (YY/MM)		f				
+66	66	17	6	Start Wage	Start Wage/Salary		f				
+67	67	17	7	End Wage	End Wage/Salary		f				
+68	68	17	8	Leaving	Reason for leaving		f				
+69	69	18	1	Company	Company		f				
+70	70	18	2	City	City State		f				
+71	71	18	3	Title	Job title/description		f				
+72	72	18	4	From Date	From (YY/MM)		f				
+73	73	18	5	To Date	To (YY/MM)		f				
+74	74	18	6	Start Wage	Start Wage/Salary		f				
+75	75	18	7	End Wage	End Wage/Salary		f				
+76	76	18	8	Leaving	Reason for leaving		f				
+78	78	20	1		0		f				
+79	79	20	2		1	1.00	f				
+80	80	20	3		3	2.00	f				
+81	81	20	4		6	3.00	f				
+82	82	20	5		9	4.00	f				
+83	83	21	1		0		f				
+84	84	21	2		1	1.00	f				
+85	85	21	3		3	2.00	f				
+86	86	21	4		6	3.00	f				
+87	87	21	5		9	4.00	f				
+88	88	22	1		0		f				
+89	89	22	2		1	1.00	f				
+90	90	22	3		3	2.00	f				
+91	91	22	4		6	3.00	f				
+92	92	22	5		9	4.00	f				
+93	93	23	1		0		f				
+94	94	23	2		1	1.00	f				
+95	95	23	3		3	2.00	f				
+96	96	23	4		6	3.00	f				
+97	97	23	5		9	4.00	f				
+98	98	24	1		0		f				
+99	99	24	2		1	1.00	f				
+100	100	24	3		3	2.00	f				
+101	101	24	4		6	3.00	f				
+102	102	24	5		9	4.00	f				
+103	103	25	1		0		f				
+104	104	25	2		1	1.00	f				
+105	105	25	3		3	2.00	f				
+106	106	25	4		6	3.00	f				
+107	107	25	5		9	4.00	f				
+108	108	26	1		0		f				
+109	109	26	2		1	1.00	f				
+110	110	26	3		3	2.00	f				
+111	111	26	4		6	3.00	f				
+112	112	26	5		9	4.00	f				
+113	113	27	1		0		f				
+114	114	27	2		1	1.00	f				
+115	115	27	3		3	2.00	f				
+116	116	27	4		6	3.00	f				
+117	117	27	5		9	4.00	f				
+118	118	28	1		0		f				
+119	119	28	2		1	1.00	f				
+120	120	28	3		3	2.00	f				
+121	121	28	4		6	3.00	f				
+122	122	28	5		9	4.00	f				
+123	123	29	1		0		f				
+124	124	29	2		1	1.00	f				
+125	125	29	3		3	2.00	f				
+126	126	29	4		6	3.00	f				
+127	127	29	5		9	4.00	f				
+128	128	30	1		0		f				
+129	129	30	2		1	1.00	f				
+130	130	30	3		3	2.00	f				
+131	131	30	4		6	3.00	f				
+132	132	30	5		9	4.00	f				
+133	133	31	1		0		f				
+134	134	31	2		1	1.00	f				
+135	135	31	3		3	2.00	f				
+136	136	31	4		6	3.00	f				
+137	137	31	5		9	4.00	f				
+138	138	32	1		0		f				
+139	139	32	2		1	1.00	f				
+140	140	32	3		3	2.00	f				
+141	141	32	4		6	3.00	f				
+142	142	32	5		9	4.00	f				
+143	143	33	1		0		f				
+144	144	33	2		1	1.00	f				
+145	145	33	3		3	2.00	f				
+146	146	33	4		6	3.00	f				
+147	147	33	5		9	4.00	f				
+148	148	34	1		0		f				
+149	149	34	2		1	1.00	f				
+150	150	34	3		3	2.00	f				
+151	151	34	4		6	3.00	f				
+152	152	34	5		9	4.00	f				
+154	154	35	2		Limited opinion	1.00	f				
+155	155	35	3		Okay	3.00	f				
+156	156	35	4		Great	5.00	f				
+157	157	35	5		Weak	2.00	f	What is missing?			
+158	158	35	6		Crap	6.00	f	What make it a crappy?			
+163	163	37	1		Slow	1.00	f				
+164	164	37	2		Hard	2.00	t	Tell me why hard is the best way?			
+165	165	37	3		Fast	3.00	f				
+166	166	37	4		Easy	4.00	t	Tell me why easy is the best way?			
+169	169	39	1	none	In one paragraph	1.00	f				
+170	170	40	1		Steelers	5.00	f				
+171	171	40	2		ASU	4.00	f				
+172	172	40	3		Alabama	3.00	f				
+173	173	40	4		Auburn	1.00	f				
+174	174	41	1	Last Name	Last Name	1.00	f				
+175	175	41	2	First Name	First Name	2.00	f				
+176	176	41	3	Primary Phone	Primary Phone	1.00	f				
+177	177	42	1	bad	1	1.00	t	Why so low? Are you dumb?			
+178	178	42	2	poor	2	2.00	f				
+179	179	42	3	fair	3	3.00	f				
+180	180	42	4	good	4	4.00	f				
+181	181	42	5	great	5	5.00	f				
+183	183	44	1		Hint: It is bigger than 3 and smaller than 4.	2.00	f		3.1415 .. 3.1415999		
+184	184	45	1	Y	Yes	1.00	f				
+200	200	50	1	1	1		f				
+201	201	50	2	2	2	1.00	f				
+202	202	50	3	3	3	2.00	f				
+203	203	50	4	4	4	3.00	f				
+204	204	50	5	5	5	4.00	f				
+205	205	51	1	1	1		f				
+206	206	51	2	2	2	1.00	f				
+207	207	51	3	3	3	2.00	f				
+208	208	51	4	4	4	3.00	f				
+209	209	51	5	5	5	4.00	f				
+210	210	52	1	1	1		f				
+211	211	52	2	2	2	1.00	f				
+212	212	52	3	3	3	2.00	f				
+213	213	52	4	4	4	3.00	f				
+214	214	52	5	5	5	4.00	f				
+215	215	53	1	1	1		f				
+216	216	53	2	2	2	1.00	f				
+217	217	53	3	3	3	2.00	f				
+218	218	53	4	4	4	3.00	f				
+219	219	53	5	5	5	4.00	f				
+220	220	54	1	1	1		f				
+221	221	54	2	2	2	1.00	f				
+222	222	54	3	3	3	2.00	f				
+223	223	54	4	4	4	3.00	f				
+224	224	54	5	5	5	4.00	f				
+167	167	37	5		None	5.00	f				2010-04-12 11:41:26.734528
+160	160	36	1		GM	1.00	f				2010-04-12 12:28:30.432333
+153	153	35	1		No opinion	0.00	f				2010-08-18 12:41:15.105406
+185	185	45	2	N	No	2.00	f				2010-08-02 17:50:27.576472
+168	168	38	1	hobbies	Enter text	2.00	f		!(golf|fish|hunt)		2010-08-09 10:34:45.036935
+161	161	36	2		Chrysler	1.00	f				2010-08-13 13:04:18.633696
+225	225	55	1	1	1		f				
+226	226	55	2	2	2	1.00	f				
+227	227	55	3	3	3	2.00	f				
+228	228	55	4	4	4	3.00	f				
+229	229	55	5	5	5	4.00	f				
+230	230	56	1	1	1		f				
+231	231	56	2	2	2	1.00	f				
+232	232	56	3	3	3	2.00	f				
+233	233	56	4	4	4	3.00	f				
+234	234	56	5	5	5	4.00	f				
+235	235	57	1	1	1		f				
+236	236	57	2	2	2	1.00	f				
+237	237	57	3	3	3	2.00	f				
+238	238	57	4	4	4	3.00	f				
+239	239	57	5	5	5	4.00	f				
+240	240	58	1	1	1		f				
+241	241	58	2	2	2	1.00	f				
+242	242	58	3	3	3	2.00	f				
+243	243	58	4	4	4	3.00	f				
+244	244	58	5	5	5	4.00	f				
+245	245	59	1	1	1		f				
+246	246	59	2	2	2	1.00	f				
+247	247	59	3	3	3	2.00	f				
+248	248	59	4	4	4	3.00	f				
+249	249	59	5	5	5	4.00	f				
+250	250	60	1	1	1		f				
+251	251	60	2	2	2	1.00	f				
+252	252	60	3	3	3	2.00	f				
+253	253	60	4	4	4	3.00	f				
+254	254	60	5	5	5	4.00	f				
+255	255	61	1	1	1		f				
+256	256	61	2	2	2	1.00	f				
+257	257	61	3	3	3	2.00	f				
+258	258	61	4	4	4	3.00	f				
+259	259	61	5	5	5	4.00	f				
+260	260	62	1	1	1		f				
+261	261	62	2	2	2	1.00	f				
+262	262	62	3	3	3	2.00	f				
+263	263	62	4	4	4	3.00	f				
+264	264	62	5	5	5	4.00	f				
+265	265	63	1	1	1		f				
+266	266	63	2	2	2	1.00	f				
+267	267	63	3	3	3	2.00	f				
+268	268	63	4	4	4	3.00	f				
+269	269	63	5	5	5	4.00	f				
+270	270	64	1	1	1		f				
+271	271	64	2	2	2	1.00	f				
+272	272	64	3	3	3	2.00	f				
+273	273	64	4	4	4	3.00	f				
+274	274	64	5	5	5	4.00	f				
+275	275	65	1	1	1		f				
+276	276	65	2	2	2	1.00	f				
+277	277	65	3	3	3	2.00	f				
+278	278	65	4	4	4	3.00	f				
+279	279	65	5	5	5	4.00	f				
+280	280	66	1	1	1		f				
+281	281	66	2	2	2	1.00	f				
+282	282	66	3	3	3	2.00	f				
+283	283	66	4	4	4	3.00	f				
+284	284	66	5	5	5	4.00	f				
+285	285	67	1	1	1		f				
+286	286	67	2	2	2	1.00	f				
+287	287	67	3	3	3	2.00	f				
+288	288	67	4	4	4	3.00	f				
+289	289	67	5	5	5	4.00	f				
+290	290	68	1	1			f				
+291	291	69	1	1			f				
+500		100	1	Yes	Yes	1.00	t	What was your job?			
+501		100	2	No	No		f				
+502		101	1	Yes	Yes	1.00	t	Enter name and relation?			
+503		101	2	No	No		f				
+504		102	1	Yes	Yes	1.00	f				
+505		102	2	No	No		f				
+506		103	1	Yes	Yes	1.00	f				
+507		103	2	No	No		f				
+508		104	1	Yes	Yes	1.00	f				
+509		104	2	No	No		f				
+510		105	1	Yes	Yes	1.00	f				
+511		105	2	No	No		t	Enter work permit #			
+512		106	1	Yes	Yes	1.00	f				
+513		106	2	No	No		f				
+514		107	1	Yes	Yes	1.00	f				
+515		107	2	No	No		f				
+516		108	1	Yes	Yes	1.00	f				
+517		108	2	No	No		f				
+518		109	1	Yes	Yes	1.00	f				
+519		109	2	No	No		f				
+520		110	1	Yes	Yes	1.00	f				
+521		110	2	No	No		f				
+522		111	1	Yes	Yes	2.00	f				
+523		111	2	No	No		f				
+524		112	1	Yes	Yes	2.00	f				
+525		112	2	No	No		f				
+526		113	1	No Diploma/GED	I did not complete high school and do not have a diploma or GED.		f				
+527		113	2	Trade School	I did not complete high school but completed a non-diploma trade school.		t	Enter Trade Area			
+528		113	3	Certificate	I completed high school but did not graduate (obtained certificate).		f				
+529		113	4	GED	I completed high school through a GED program.	1.00	f				
+530		113	5	HS Diploma	I completed high school and received a diploma.	1.00	t	Enter name of high school, city and state			
+531		113	6	HS Diploma/CT	I completed high school and received a diploma with a Career Tech Endorsement.	1.00	t	Enter name of high school, city and state			
+532		113	7	Military Tech	I completed a military technical school.	1.00	t	Enter Technical Area			
+533		113	8	Some Assoc	I attended an associates degree granting technical school/community college but did not complete the program.	1.00	f				
+534		113	9	Assoc Degree	I received an associates degree from a technical school/community college.	1.00	t	Enter degree, institute, and year completed			
+535		113	10	Some College	I attended an accredited, degree-granting college/university but did not receive a degree.	1.00	f				
+536		113	11	BS/BA Degree	I received a BS/BA degree from an accredited, degree-granting college/university.	1.00	t	Enter degree, institute, and year completed			
+537		113	12	Some Advanced	I attended an advanced degree program (MS/MA/PhD) but did not receive a degree.	1.00	f				
+665		138	2	1-3 Years	1-3 Years	2.00	f				
+538		113	13	MS/MA+ Degree	I received an MS/MA/PhD degree from an accredited, degree-granting college/university.	1.00	t	Enter degree, institute, and year completed			
+539		114	1	Company	Company		f				
+540		114	2	City	City State		f				
+541		114	3	Title	Job title/description		f				
+542		114	4	From Date	From (YY/MM)		f				
+543		114	5	To Date	To (YY/MM)		f				
+544		114	6	Start Wage	Start Wage/Salary		f				
+545		114	7	End Wage	End Wage/Salary		f				
+546		114	8	Leaving	Reason for leaving		f				
+547		115	1	Company	Company		f				
+548		115	2	City	City State		f				
+549		115	3	Title	Job title/description		f				
+550		115	4	From Date	From (YY/MM)		f				
+551		115	5	To Date	To (YY/MM)		f				
+552		115	6	Start Wage	Start Wage/Salary		f				
+553		115	7	End Wage	End Wage/Salary		f				
+554		115	8	Leaving	Reason for leaving		f				
+555		116	1	Company	Company		f				
+556		116	2	City	City State		f				
+557		116	3	Title	Job title/description		f				
+558		116	4	From Date	From (YY/MM)		f				
+559		116	5	To Date	To (YY/MM)		f				
+560		116	6	Start Wage	Start Wage/Salary		f				
+561		116	7	End Wage	End Wage/Salary		f				
+562		116	8	Leaving	Reason for leaving		f				
+563		117	1	OtherExp			f				
+564		118	1	0	0		f				
+565		118	2	1	1	1.00	f				
+566		118	3	3	3	2.00	f				
+567		118	4	6	6	3.00	f				
+568		118	5	9	9	4.00	f				
+569		119	1	0	0		f				
+570		119	2	1	1	1.00	f				
+571		119	3	3	3	2.00	f				
+572		119	4	6	6	3.00	f				
+573		119	5	9	9	4.00	f				
+574		120	1	0	0		f				
+575		120	2	1	1	1.00	f				
+576		120	3	3	3	2.00	f				
+577		120	4	6	6	3.00	f				
+578		120	5	9	9	4.00	f				
+579		121	1	0	0		f				
+580		121	2	1	1	1.00	f				
+581		121	3	3	3	2.00	f				
+582		121	4	6	6	3.00	f				
+583		121	5	9	9	4.00	f				
+584		122	1	0	0		f				
+585		122	2	1	1	1.00	f				
+586		122	3	3	3	2.00	f				
+587		122	4	6	6	3.00	f				
+588		122	5	9	9	4.00	f				
+589		123	1	0	0		f				
+590		123	2	1	1	1.00	f				
+591		123	3	3	3	2.00	f				
+592		123	4	6	6	3.00	f				
+593		123	5	9	9	4.00	f				
+594		124	1	0	0		f				
+595		124	2	1	1	1.00	f				
+596		124	3	3	3	2.00	f				
+597		124	4	6	6	3.00	f				
+598		124	5	9	9	4.00	f				
+599		125	1	0	0		f				
+600		125	2	1	1	2.00	f				
+601		125	3	3	3	4.00	f				
+602		125	4	6	6	5.00	f				
+603		125	5	9	9	5.00	f				
+604		126	1	0	0		f				
+605		126	2	1	1	1.00	f				
+606		126	3	3	3	2.00	f				
+607		126	4	6	6	3.00	f				
+608		126	5	9	9	4.00	f				
+609		127	1	0	0		f				
+610		127	2	1	1	1.00	f				
+611		127	3	3	3	2.00	f				
+612		127	4	6	6	3.00	f				
+613		127	5	9	9	4.00	f				
+614		128	1	0	0		f				
+615		128	2	1	1	1.00	f				
+616		128	3	3	3	2.00	f				
+617		128	4	6	6	3.00	f				
+618		128	5	9	9	4.00	f				
+619		129	1	0	0		f				
+620		129	2	1	1	1.00	f				
+621		129	3	3	3	2.00	f				
+622		129	4	6	6	3.00	f				
+623		129	5	9	9	4.00	f				
+624		130	1	0	0		f				
+625		130	2	1	1	1.00	f				
+626		130	3	3	3	2.00	f				
+627		130	4	6	6	3.00	f				
+628		130	5	9	9	4.00	f				
+629		131	1	0	0		f				
+630		131	2	1	1	1.00	f				
+631		131	3	3	3	2.00	f				
+632		131	4	6	6	3.00	f				
+633		131	5	9	9	4.00	f				
+634		132	1	0	0		f				
+635		132	2	1	1	1.00	f				
+636		132	3	3	3	2.00	f				
+637		132	4	6	6	3.00	f				
+638		132	5	9	9	4.00	f				
+639		133	1	0	0		f				
+640		133	2	1	1	1.00	f				
+641		133	3	3	3	2.00	f				
+642		133	4	6	6	3.00	f				
+643		133	5	9	9	4.00	f				
+644		134	1	0	0		f				
+645		134	2	1	1	1.00	f				
+646		134	3	3	3	2.00	f				
+647		134	4	6	6	3.00	f				
+648		134	5	9	9	4.00	f				
+649		135	1	0	0		f				
+650		135	2	1	1	1.00	f				
+651		135	3	3	3	2.00	f				
+652		135	4	6	6	3.00	f				
+653		135	5	9	9	4.00	f				
+654		136	1	0	0		f				
+655		136	2	1	1	1.00	f				
+656		136	3	3	3	2.00	f				
+657		136	4	6	6	3.00	f				
+658		136	5	9	9	4.00	f				
+659		137	1	0	0		f				
+660		137	2	1	1	1.00	f				
+661		137	3	3	3	2.00	f				
+662		137	4	6	6	3.00	f				
+663		137	5	9	9	4.00	f				
+664		138	1	None	None		f				
+666		138	3	4-6 Years	4-6 Years	5.00	f				
+667		138	4	7-10 Years	7-10 Years	5.00	f				
+668		138	5	10+ Years	10+ Years	5.00	f				
+669		139	1	All customer servic	All customer service/retail experience	4.00	f				
+670		139	2	Mostly customer ser	Mostly customer service/retail, with some manufacturing experience	3.00	f				
+671		139	3	About the same amou	About the same amount of manufacturing and customer service/retail experience	2.00	f				
+672		139	4	Mostly manufacturin	Mostly manufacturing, with some customer service/retail experience.	1.00	f				
+673		139	5	All manufacturing e	All manufacturing experience.		f				
+674		140	1	None	None		f				
+675		140	2	6 Months-1 Year	6 Months-1 Year	1.00	f				
+676		140	3	2-3 Years	2-3 Years	3.00	f				
+677		140	4	4-6 Years	4-6 Years	4.00	f				
+678		140	5	5-7 Years	5-7 Years	5.00	f				
+679		140	6	8-10 Years	8-10 Years	5.00	f				
+680		141	1	Yes	Yes	1.00	f				
+681		141	2	No	No		f				
+682		142	1	Yes	Yes	1.00	f				
+683		142	2	No	No		f				
+684		143	1	No unemployed perio	No unemployed period	5.00	f				
+685		143	2	1-6 Months	1-6 Months	4.00	f				
+686		143	3	7-12 Months	7-12 Months	3.00	f				
+687		143	4	13-24 Months	13-24 Months	1.00	f				
+688		143	5	25 + Months	25 + Months		f				
+689		144	1	8-10 Years	8-10 Years	5.00	f				
+690		144	2	6-7 Years	6-7 Years	5.00	f				
+691		144	3	4-5 Years	4-5 Years	4.00	f				
+692		144	4	2-3 Years	2-3 Years	3.00	f				
+693		144	5	Less than 2 Years	Less than 2 Years	1.00	f				
+694		145	1	Yes	Yes	1.00	f				
+695		145	2	No	No		f				
+696		146	1	0	0	1.00	f				
+697		146	2	1	1	1.00	f				
+698		146	3	2	2		f				
+699		146	4	3 or more	3 or more		f				
+700		147	1	$6.00-$7.50	$6.00-$7.50	5.00	f				
+701		147	2	$7.51-$9.00	$7.51-$9.00	5.00	f				
+702		147	3	$9.01-$10.50	$9.01-$10.50	4.00	f				
+703		147	4	$10.51-$12.00	$10.51-$12.00	2.00	f				
+704		147	5	$12.01 and above	$12.01 and above	1.00	f				
+706		148	2	No	No	1.00	f				
+707		148	3	Yes	Yes	2.00	f				
+709		149	2	No	No	1.00	f				
+711		150	1	N/A	N/A		f				
+712		150	2	No	No	1.00	f				
+713		150	3	Yes	Yes	2.00	f	What are the Objectives			
+715		151	2	No	No	1.00	f				
+716		151	1	N/A	N/A		f				
+77	77	19	1	OtherExp			f				2010-04-03 17:06:27.601475
+705		148	1	N/A	N/A	4.00	f				2010-04-11 15:59:33.710249
+710		149	1	N/A	N/A	3.00	f				2010-04-11 16:03:58.21551
+708		149	3	Yes	Yes	4.00	t	What are the Objectives			2010-04-11 16:17:05.877598
+714		151	3	Yes	Yes	2.00	f	What are the Objectives			2010-04-11 16:24:14.770716
+162	162	36	3		Ford	3.00	t	Do you trust the Microsoft thingie?			2010-04-12 12:29:46.126204
+719		36	4		Japanese	1.00	t	Does you pedal stick to the metal?		2010-04-12 12:31:05.418316	2010-04-12 12:31:05.418316
+720		36	5		Other	1.00	t	Who made it?		2010-04-12 12:31:43.241213	2010-04-12 12:31:43.241213
+159	159	35	7		Zilch 	10.00	f	What make it a zilch?			2010-08-02 16:30:37.280831
+721		156	1	nouns	Noun(s)	1.00	f		fox&back	2010-08-08 12:59:06.713976	2010-08-08 14:45:10.897492
+723		156	3	adjective	At least one adjective	1.00	f		(quick|brown|lazy)	2010-08-08 13:01:20.819608	2010-08-08 14:45:32.396765
+722		156	2	Verbs	Verb(s)	1.00	f		jumps	2010-08-08 12:59:55.85973	2010-08-08 14:45:50.417626
+182	182	43	1	Typing test	The quick brown fox jumps the lazy dogs back. 	3.00	f		1::back&1::fox&-0.5::dog&1::(quick|brown|lazy)		2010-08-09 10:33:32.201692
