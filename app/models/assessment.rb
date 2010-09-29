@@ -14,7 +14,6 @@ class Assessment < ActiveRecord::Base
     totalScore = 0
     totalScoreWeighted = 0
     category = self.category
-    passed = true
     all_answers = []
     failed = []
     question_raw = {}
@@ -28,7 +27,7 @@ class Assessment < ActiveRecord::Base
       weight = qa[:questions][queIDX][:weight].nil? ? 0 :qa[:questions][queIDX][:weight]
       ansType = qa[:questions][queIDX][:answer_type].blank? ? "" : qa[:questions][queIDX][:answer_type].downcase
       scoreMethod = qa[:questions][queIDX][:score_method].blank? ? "value" : qa[:questions][queIDX][:score_method].downcase
-      isScored = ((scoreMethod.downcase != "none")) #  and (weight > 0)
+      isScored = ((scoreMethod.downcase != "none")) 
       isText =  !(ansType =~ /text/i).nil?
       
       max = -999
@@ -100,10 +99,7 @@ class Assessment < ActiveRecord::Base
       # The three type of answers only porduce val
       
       if (isArray)
-        if ((scoreMethod.downcase == "sum")) # and ((ansType.downcase == "checkbox") or (ansType.downcase == "select-multiple")))
-          if ansID == 156
-            #shit = crap
-          end
+        if ((scoreMethod.downcase == "sum")) 
           answerValue = sum
         else
           answerValue = max
@@ -119,7 +115,6 @@ class Assessment < ActiveRecord::Base
       if (qa[:questions][queIDX][:critical])
         
         if (answerValue < qa[:questions][queIDX][:minimum_value].to_f)
-          passed = false
           failed << qa[:questions][queIDX][:id]
         end
       end
@@ -135,7 +130,7 @@ class Assessment < ActiveRecord::Base
     if  max_weighted > 0
       score_weighted =  (totalScoreWeighted / max_weighted) * 100 
     end
-    logger.info "The score values are #{score_raw} and #{score_weighted}"
+    #logger.info "The score values are #{score_raw} and #{score_weighted}"
 
     score = {:answers => params["post.answer"], :all_answers => all_answers, :failed => failed, 
       :answers_other => params["post.answer_other"].nil? ? {} : params["post.answer_other"],

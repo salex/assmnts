@@ -95,7 +95,6 @@ fieldset.related legend div.field, fieldset.related legend div.actions { margin-
 /* simple validation */
 .validation-error {border:solid 2px red;margin:4px;padding:4px;}
 .validation-advice { margin: 0 1em; padding: 2px; background-color: #FF3300!important; color: #FFF; font-weight: bold; }
-
 .custom-advice { margin: 5px 0; padding: 5px; background-color: #C8AA00; color: #FFF; font-weight: bold; }
 
 textarea.required, select.required { border: 1px solid #0ae; }
