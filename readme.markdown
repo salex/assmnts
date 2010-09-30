@@ -44,7 +44,7 @@ There is some background information later in this read me, but to use the engin
 
 In this demo, there are several tables and code stubs to preform these functions.
 
-* Assessor - a multi use model that links the assessment to the model being assessed and optionally, the model the controls the assessing
+* Assessor - a multi use model that links the assessment to the model being assessed and optionally, the model that controls the assessing
 
 * Score - For demo purposes, a place to store all the scores
 * People - A stub that gets assessed 
@@ -86,13 +86,14 @@ There are numerous option on what types of questions and answers are displayed a
 
 ### Installation (Rails 3.0 only)
 
-* Download Assmnts from github
+* Download/clone Assmnts from github
+* bundle install # no other gems used
 * rake db:create  #(db is configured for sqlite3)
 * rake db:load:schema
 * rake db:seed # seed loads about 10 test assessments/questions and answers.
-* bundle install # no other gems used
 * rails s
 
+The rake db:seed uses JSON files to populate the tables. Not the fastest thing in the world, but seems to work. If you use PostgreSql, you may have to reset the ID counter since the import sets the IDs.
 ### Basic CRUD
 
 You can browse through the assessments, questions and answers and have a look around. There is a short menu bar and a basic css layout
@@ -151,7 +152,9 @@ The last item is rather non-trivial. It is easy to re-score an assessment, but w
 
 Rather than trying to use words to describe all the options, lets look at a screen shot of what I call my silly test assessment and a dump of the scoring results.
 
-<img src="public/images/display.png" alt="" />
+<img src="public/images/display.png" alt="" /> 
+
+	** See image in public/images/display.png **
 
 The details of what is in the assessments, questions and answers is not shown at this point, but the display is completely build from the models. Basically a question has a text question to ask, what format to display the answers and a few title options. Answers have a textual answer, a value, 
 and optional items such as displaying additional questions if the answer is selected.
@@ -165,7 +168,9 @@ There are a few thing to note:
 
 When this assessment is posted, a *scoring object* is created that you can use all or parts of the object to suit your needs. A dump of scoring object follows.
 
-<img src="public/images/dump.png" alt="" />
+<img src="public/images/dump.png" alt="" /> 
+
+	** See image in public/images/dump.png **
 
 The scoring object is at the bottom of the screen (post.inspect) and the top part is one way to display the results in a compressed, but readable display. Lets
 look a little closer to the scoring object.
