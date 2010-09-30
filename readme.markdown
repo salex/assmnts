@@ -89,7 +89,7 @@ There are numerous option on what types of questions and answers are displayed a
 * Download/clone Assmnts from github
 * bundle install # no other gems used
 * rake db:create  #(db is configured for sqlite3)
-* rake db:load:schema
+* rake db:schema:load
 * rake db:seed # seed loads about 10 test assessments/questions and answers.
 * rails s
 
