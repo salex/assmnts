@@ -6,6 +6,7 @@
 
   <table>
     <tr class="list-header">
+      <th>ID</th>
         <th>Assessment</th>
         <th>Assesses</th>
         <th>Assessing</th>
@@ -16,6 +17,8 @@
 
   <% @assessors.each do |assessor| %>
     <tr>
+      <td><%= assessor.id %></td>
+      
       <td><%= assessor.assessment_id %></td>
       <td><%= assessor.assessed_model %></td>
       <td><%= assessor.assessing_type %>/<%= assessor.assessing_id %></td>

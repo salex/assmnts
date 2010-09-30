@@ -1,12 +1,15 @@
-Hi!
-
+<h3>Hi</h3>
 <p>This is just a test case for the assessments engine.</p>
-<p>The core engine tables are assessments, questions, answers, assessors and scores</p>
+<ul>
+<li>The core engine tables are Assessments, Questions, Answers</li>
+<li>Assessors and Scores are tables that are outside the engine, but must be defined in someway to talk to the engine.</li>
 
-<p>Other table stubs are there to test the flow outside the engine. Stages(job_stages), Candidates(CS), and people.</p>
+<li>Other table stubs are there to test the flow outside the engine. Stages(stages of an job selection process {application, interview, etc}), Candidates(People who are applying for a job), and People (generic person).</li>
 
-<p>To test an application simulation /actions/take/{stageid}/{model}/{person_id or candidate_id}</p>
+<li>To test an application simulation /actions/take/{stageid}/{model}/{person_id or candidate_id} or /action/take/1155/candidates/1</li>
 
-<p>to test a single assessment not using the test part of the engine  /actions/take/{assessor_id}/default/{person_id or candidate_id} </p>
+<li>to test a single assessment not using the test part of the engine  /actions/take/{assessor_id}/default/{person_id or candidate_id}  or
+  /actions/take/1/default/1 - This is a kludge so I didn't have to write another controller. Look at routes.rb to see how this is mapped. Default just means, use the ID of the assessor and use the ID of the  assessed model from the assessor. </li>
+</ul>
 
 This is just an experiment

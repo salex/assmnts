@@ -11,13 +11,15 @@
   <div id="container">
     <div id="header">&nbsp;</div>
     <div id="navbar">
-<%= link_to "Assessments", assessments_path %> |
-<%= link_to "People", people_path %> |
-<%= link_to "Assessors", assessors_path %> |
-<%= link_to "Scores", scores_path %> |
-<%= link_to "Stages", stages_path %> |
-<%= link_to "Candidates", candidates_path %>
-</div>
+			<%= link_to "Home", root_path %> |
+	
+			<%= link_to "Assessments", assessments_path %> |
+			<%= link_to "People", people_path %> |
+			<%= link_to "Assessors", assessors_path %> |
+			<%= link_to "Scores", scores_path %> |
+			<%= link_to "Stages", stages_path %> |
+			<%= link_to "Candidates", candidates_path %>
+		</div>
     <div id="content">
       <%= yield %>
     </div>

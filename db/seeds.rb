@@ -62,6 +62,7 @@ people.each {|i|
   person.id = i["person"]["id"]
   person.save
 }
+puts "Wrote people records"
 
 filepath = Rails.root.join("db","assessments.json")
 json = File.read(filepath)
@@ -71,6 +72,7 @@ assessments.each {|i|
   assessment.id = i["assessment"]["id"]
   assessment.save
 }
+puts "Wrote assessment records"
 
 filepath = Rails.root.join("db","questions.json")
 json = File.read(filepath)
@@ -80,6 +82,7 @@ questions.each {|i|
   question.id = i["question"]["id"]
   question.save
 }
+puts "Wrote question records"
 
 filepath = Rails.root.join("db","answers.json")
 json = File.read(filepath)
@@ -89,6 +92,7 @@ answers.each {|i|
   answer.id = i["answer"]["id"]
   answer.save
 }
+puts "Wrote answer records"
 
 filepath = Rails.root.join("db","assessors.json")
 json = File.read(filepath)
@@ -98,6 +102,7 @@ assessors.each {|i|
   assessor.id = i["assessor"]["id"]
   assessor.save
 }
+puts "Wrote assessor records"
 
 filepath = Rails.root.join("db","candidates.json")
 json = File.read(filepath)
@@ -107,6 +112,7 @@ candidates.each {|i|
   candidate.id = i["candidate"]["id"]
   candidate.save
 }
+puts "Wrote candidate records"
 
 filepath = Rails.root.join("db","scores.json")
 json = File.read(filepath)
@@ -116,6 +122,7 @@ scores.each {|i|
   score.id = i["score"]["id"]
   score.save
 }
+puts "Wrote scores records"
 
 filepath = Rails.root.join("db","stages.json")
 json = File.read(filepath)
@@ -125,4 +132,5 @@ stages.each {|i|
   stage.id = i["stage"]["id"]
   stage.save
 }
+puts "Wrote stage records"
 

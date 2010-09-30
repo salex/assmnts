@@ -132,17 +132,19 @@ class Assessment < ActiveRecord::Base
     end
     #logger.info "The score values are #{score_raw} and #{score_weighted}"
 
-    score = {:answers => params["post.answer"], :all_answers => all_answers, :failed => failed, 
-      :answers_other => params["post.answer_other"].nil? ? {} : params["post.answer_other"],
-      :question_raw => question_raw,
-      :total_raw => totalScore,
-      :total_weighted => totalScoreWeighted,
-      :category => category,
-      :max_raw => max_raw,
-      :max_weighted => max_weighted,
-      :score_weighted => score_weighted,
-      :score_raw => score_raw,
-      :assessment_id => self.id}
+    score = {"answers" => params["post.answer"],
+      "all_answers" => all_answers,
+      "failed" => failed, 
+      "answers_other" => params["post.answer_other"].nil? ? {} : params["post.answer_other"],
+      "question_raw" => question_raw,
+      "total_raw" => totalScore,
+      "total_weighted" => totalScoreWeighted,
+      "category" => category,
+      "max_raw" => max_raw,
+      "max_weighted" => max_weighted,
+      "score_weighted" => score_weighted,
+      "score_raw" => score_raw,
+      "assessment_id" => self.id}
     return score
   end 
   

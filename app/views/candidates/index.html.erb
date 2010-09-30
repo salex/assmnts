@@ -6,7 +6,9 @@
 
   <table>
     <tr class="list-header">
+        <th>id</th>
         <th>Name</th>
+        
         <th>Stage</th>
         <th>Person</th>
         <th>Score</th>
@@ -16,7 +18,9 @@
 
   <% @candidates.each do |candidate| %>
     <tr>
+        <td><%= candidate.id %></td>
         <td><%= candidate.name %></td>
+        
         <td><%= candidate.stage_id %></td>
         <td><%= candidate.person_id %></td>
         <td><%= candidate.score %></td>

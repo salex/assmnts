@@ -33,7 +33,7 @@ Assmnts::Application.routes.draw do |map|
   end
   
   resources :answers, :only => [:show, :edit, :update, :destroy]
-  match 'applicants/:action/:id' => 'applicants#view'
+  #match 'applicants/:action/:id' => 'applicants#view'
   
   match ':controller/:action/:id/:assessed/:assessed_id'
   # The priority is based upon order of creation:

@@ -102,15 +102,16 @@ module Assmnt
   
   def dumpPost(post,qa)
     html = "<div class=\"assmnt-list\" style=\"font-size:.8em\">"
-    html << "<table><tr class=\"list-header\"><th width=\"130\">Scores/(Fail)</th><th colspan=\"2\" class=\"center\">#{post[:category.to_s]}</th></tr>"
+    html << "<table><tr class=\"list-header\"><th width=\"130\">Scores/(Fail)</th><th colspan=\"2\" class=\"center\">#{post["category"]}</th></tr>"
     html << "<tr class=\"list-header\"><th width=\"120\">rs*w=ws (F)</th><th>Question</th><th>Answer(s)</th></tr>\n"
-    post[:answers.to_s].each {|key,value|
+    logger.info post.inspect
+    post["answers"].each {|key,value|
       value_display = ""
       key_i = key.to_i
       queIDX = qa[:q_ids].index(key_i)
       queID = qa[:q_ids][queIDX].to_s
       dropped = ""
-      if post[:failed.to_s].include?(key_i)
+      if post["failed"].include?(key_i)
         dropped = " <span style=\"color:red\">(F)</span>"
       end
       ques = qa[:questions][queIDX][:shortname].blank? ? truncateText(qa[:questions][queIDX][:question],30) : qa[:questions][queIDX][:shortname]
@@ -131,8 +132,8 @@ module Assmnt
             next
           end
           ansans = qa[:answers][ansIDX][:shortname].blank? ? truncateText(qa[:answers][ansIDX][:answer],30) : qa[:answers][ansIDX][:shortname]
-          if post[:answers_other.to_s][value[i]]
-            ansOther = "{"+post[:answers_other.to_s][value[i]]+"}"
+          if post["answers_other"][value[i]]
+            ansOther = "{"+post["answers_other"][value[i]]+"}"
           end
           value_display += "[#{value[i]}:#{ansans}=>#{ansText}#{ansOther}] "
           
@@ -145,8 +146,8 @@ module Assmnt
             next
           end
           ansans = qa[:answers][ansIDX][:shortname].blank? ? truncateText(qa[:answers][ansIDX][:answer],30) : qa[:answers][ansIDX][:shortname]
-          if post[:answers_other.to_s][value[i]]
-            ansOther = "{"+post[:answers_other.to_s][value[i]]+"}"
+          if post["answers_other"][value[i]]
+            ansOther = "{"+post["answers_other"][value[i]]+"}"
           end
           value_display += "[#{value[i]}:#{ansans}#{ansOther}] "
         end
@@ -157,14 +158,14 @@ module Assmnt
           next
         end    
         ansans = qa[:answers][ansIDX][:shortname].blank? ? truncateText(qa[:answers][ansIDX][:answer],30) : qa[:answers][ansIDX][:shortname]
-        if post[:answers_other.to_s][value]
-          ansOther = "{"+post[:answers_other.to_s][value]+"}"
+        if post["answers_other"][value]
+          ansOther = "{"+post["answers_other"][value]+"}"
         end
         
         value_display += "[#{value}:#{ansans}#{ansOther}] "
       end
       
-      val = post[:question_raw.to_s][queID]
+      val = post["question_raw"][queID]
       valw = val * weight
       if val == 0
         val = "0.0"

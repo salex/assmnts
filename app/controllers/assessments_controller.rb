@@ -125,14 +125,12 @@ class AssessmentsController < ApplicationController
   
   def post
     @assessment = Assessment.find(params[:id])
-#    qa = getQandA(@assessment)
-    #qa = @assessment.getQandA
-
-    #result = scoreAssessment(@assessment,qa)
     result = @assessment.scoreAssessment(params)
     session["post-#{params[:id]}"] = result
+    qa = @assessment.getQandA
+    
     #testing dumping post
-    @html = dumpPost(result,@assessment.getQandA)
+    @html = dumpPost(result,qa)
     #@json = result.to_json
   end
   

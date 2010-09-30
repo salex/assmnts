@@ -75,18 +75,18 @@ class ActionsController < ApplicationController
       category = @assessment.category
       @score = Score.find(params[:assessed_id])
       result = @assessment.scoreAssessment(params)
-      @score.answers = "|" + result[:all_answers].join("|") + "|"
+      @score.answers = "|" + result["all_answers"].join("|") + "|"
       # for summary
-      session[:take][:total_raw] += result[:total_raw]
-      session[:take][:total_weighted] += result[:total_weighted]
-      session[:take][:max_raw] += result[:max_raw]
-      session[:take][:max_weighted] += result[:max_weighted]
+      session[:take][:total_raw] += result["total_raw"]
+      session[:take][:total_weighted] += result["total_weighted"]
+      session[:take][:max_raw] += result["max_raw"]
+      session[:take][:max_weighted] += result["max_weighted"]
       session[:take][:answers] +=  @score.answers
       
       @score.score_object = result.to_json
       @score.status = "complete"
-      @score.score =  result[:score_raw]
-      @score.score_weighted =  result[:score_weighted]
+      @score.score =  result["score_raw"]
+      @score.score_weighted =  result["score_weighted"]
       @score.save
       session[:steps][category][:complete] = true
       take # see if any more assessments
@@ -98,6 +98,8 @@ class ActionsController < ApplicationController
   end
   
   def make_summary
+    # this is an example of how to summarize a muliti-assessement and post an overall score
+    # for demo purposes, the scored is stored in both the generic score stub and candidate stub.
       clone = Score.where(:parent_id => session[:take][:assessing_id], :assessed_id => session[:take][:assessed_id] ).last
       if clone.nil?
         clone = Score.find(session[:take][:score_ids][0]).clone
