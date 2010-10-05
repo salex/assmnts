@@ -152,7 +152,7 @@ The last item is rather non-trivial. It is easy to re-score an assessment, but w
 
 Rather than trying to use words to describe all the options, let's look at a screen shot of what I call my silly test assessment and a dump of the scoring results.
 
-<img src="public/images/display.png" alt="" /> 
+<img src="http://github.com/salex/assmnts/blob/master/public/images/display.png" alt="" /> 
 
 	** See image in public/images/display.png **
 
@@ -168,7 +168,7 @@ There are a few things to note:
 
 When this assessment is posted, a *scoring object* is created; you can use all or parts of the object to suit your needs. A dump of a scoring object follows:
 
-<img src="public/images/dump.png" alt="" /> 
+<img src="http://github.com/salex/assmnts/blob/master/public/images/dump.png" alt="" /> 
 
 	** See image in public/images/dump.png **
 
