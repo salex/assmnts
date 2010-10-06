@@ -2,7 +2,7 @@ class AssessorsController < ApplicationController
   # GET /assessors
   # GET /assessors.xml
   def index
-    @assessors = Assessor.all
+    @assessors = Assessor.includes(:assessment).order("assessed_model, assessing_type, sequence")
 
     respond_to do |format|
       format.html # index.html.erb

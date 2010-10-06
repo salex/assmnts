@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(:version => 20100822150506) do
     t.integer  "sequence"
   end
 
-  add_index "assessors", ["assessed_model"], :name => "index_assessors_on_assesses_type"
+  add_index "assessors", ["assessed_model"], :name => "index_assessors_on_assessed_model"
 
   create_table "candidates", :force => true do |t|
     t.string   "name"

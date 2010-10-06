@@ -25,7 +25,6 @@ Just about anything where you want to capture scores on one or more **questions*
 		has_many :answers, :order => "sequence", :dependent => :destroy
 		attr_accessible :question, :sequence, :shortname, :note, :answer_type, :display_type, 
 		:score_method, :weight, :critical, :minimum_value, :group_header
-	
 	end
 
 	class Answer < ActiveRecord::Base
@@ -86,20 +85,22 @@ There are numerous options on what types of questions and answers are displayed 
 
 ### Installation (Rails 3.0 only)
 
-* Download/clone Assmnts from github
-* bundle install # no other gems used
-* rake db:create  # db is configured for sqlite3
-* rake db:load:schema
-* rake db:seed # seed loads about 10 test assessments/questions and answers.
-* rails s
+1. `>git clone <assmnts repository url>`
+2. `>cd assmnts/`
+3. `>bundle install` # no other gems used
+4. `>rake db:create`  # db is configured for sqlite3
+5. `>rake db:schema:load`
+6. `>rake db:seed` # seed loads about 10 test assessments/questions and answers.
+7. `>rails server`
 
 The rake db:seed uses JSON files to populate the tables. Not the fastest thing in the world, but seems to work. If you use PostgreSql, you may have to reset the ID counter since the import sets the IDs.
+
 ### Basic CRUD
 
 You can browse through the assessments, questions and answers and have a look around. There is a short menu bar and a basic CSS layout
 to help you get around.
 
-The Show link for an assessment will have a "Test Assessment" link that uses the built-in display\_assessment and score\_assessmeent methods.
+The Show link for an assessment will have a "Test Assessment" link that uses the built-in display\_assessment and score\_assessment methods.
 
 You can Clone an assessment. Provided so the same assessment can be used, but with different scoring (see background).
 
@@ -142,9 +143,9 @@ Assessments was designed to handle three tasks:
 
 While this approach greatly reduces the development effort in creating, displaying and scoring an assessment, there is still some work needed to adapt Assessments to your use.
 
-* A model that has an *assessible* need. 
+* A model that has an *assessable* need. 
 	* A relationship from that model to the assessment must be established
-	* This could include multiple assessments such as the job applicant application.
+	* This could include multiple assessments such as the job applicant application.	
 * A place to store the scoring object.
 * Procedures to handle changes (questions added, deleted or values changed that affect previously scored assessments)
 
